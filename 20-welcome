@@ -1,0 +1,29 @@
+#!/bin/bash
+
+clear
+
+# Welcome message
+WELCOME_CLOUDCLI="
+   _____ _                 _  _____ _      _____
+  / ____| |               | |/ ____| |    |_   _|
+ | |    | | ___  _   _  __| | |    | |      | |
+ | |    | |/ _ \\| | | |/ _\` | |    | |      | |
+ | |____| | (_) | |_| | (_| | |____| |____ _| |_
+  \\_____|_|\\___/ \\__,_|\\__,_|\\_____|______|_____|
+
+  Release: v1.0.0
+  Build  : 2023-11-29
+  GitHub : https://github.com/cloudresty/cloudcli
+  Docker : https://hub.docker.com/r/cloudresty/cloudcli
+
+---
+
+  Welcome to CloudCLI, a Debian-based Docker image from
+  Cloudresty containing a set of CLI tools for accessing
+  cloud services from the command line.
+
+---
+"
+
+# Print welcome message
+echo -e "$WELCOME_CLOUDCLI"
