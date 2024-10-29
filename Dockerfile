@@ -77,12 +77,13 @@ WORKDIR /root
 
 # Install Alibaba Cloud CLI
 RUN     curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh | bash
+RUN     rm aliyun-cli-linux-latest-amd64.tgz
 
 # Install AWS CLI
 RUN     curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip && \
         unzip awscliv2.zip && \
         ./aws/install && \
-        rm -rf awscliv2.zip aws
+        rm awscliv2.zip aws
 
 # Install Azure CLI
 RUN     curl -sL https://aka.ms/InstallAzureCLIDeb | bash
